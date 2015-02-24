@@ -1,7 +1,42 @@
 .name-container {
   position: absolute;
-  top: 50%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.name {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 7em;
+}
+
+.job-title {
+  font-family: 'Lato';
+  font-weight: 300;
+
+  font-size: 3em;
+}
+
+.link-container {
+  position: absolute;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.link-line {
+  font-family: 'Droid Serif';
+  font-size: 1.5em;
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-link:hover {
+
 }
