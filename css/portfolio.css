@@ -16,7 +16,6 @@
 .job-title {
   font-family: 'Lato';
   font-weight: 300;
-
   font-size: 3em;
 }
 
@@ -26,11 +25,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
 
 .link-line {
   font-family: 'Droid Serif';
   font-size: 1.5em;
+  width: 100%;
 }
 
 .portfolio-link {
