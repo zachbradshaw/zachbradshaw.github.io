@@ -1,6 +1,15 @@
+body {
+  font-family: 'Lato';
+}
+
+.portfolio-section {
+  width: 100vw;
+  height: 100vh;
+}
+
 .name-container {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -8,13 +17,11 @@
 }
 
 .name {
-  font-family: 'Lato';
   font-weight: 700;
   font-size: 7em;
 }
 
 .job-title {
-  font-family: 'Lato';
   font-weight: 300;
   font-size: 3em;
 }
@@ -54,10 +61,68 @@
 }
 
 .contact-link {
-  font-family: 'portfolio-icons';
+  /*font-family: 'portfolio-icons';*/
   margin: .25em;
 }
 
 .pipes {
   font-size: 1.2em;
+}
+
+.project-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.project-screenshot {
+  position: absolute;
+  width: 50%;
+}
+
+.project-detail {
+  position: absolute;
+  width: 45%;
+  right: 3%;
+}
+
+.project-header {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 2em;
+}
+
+.memory {
+  margin-top: 31em;
+}
+
+.resourceful {
+  margin-top: 54em;
+}
+
+.appointments {
+  margin-top: 77em;
+}
+
+.signup {
+  margin-top: 112em;
+}
+
+.hangman {
+  margin-top: 135em;
+}
+
+#about-section {
+  margin-top: 175em;
+  margin-bottom: 12em;
+}
+
+.about {
+  font-size: 2em;
+  width: 60%;
+  margin: auto;
+}
+
+.footer-info {
+  text-align: center;
 }

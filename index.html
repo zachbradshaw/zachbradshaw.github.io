@@ -10,40 +10,141 @@
   <link rel="stylesheet" href="css/defaults.css">
   <link rel="stylesheet" href="css/portfolio.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-  <link href="https://fontastic.s3.amazonaws.com/9AbKReKAfTW72zPD43Ns6g/icons.css" rel="stylesheet">
+  <!-- <link href="https://fontastic.s3.amazonaws.com/9AbKReKAfTW72zPD43Ns6g/icons.css" rel="stylesheet"> -->
 </head>
 
 <body>
 
-  <div class="name-container">
-    <h1 class="name">Zach Bradshaw</h1>
-    <h3 class="job-title">Front End Developer</h3>
+  <div class="portfolio-section">
+
+    <div class="name-container">
+      <h1 class="name">Zach Bradshaw</h1>
+      <h3 class="job-title">Front End Developer</h3>
+    </div>
+
+    <div class="contact-container">
+      <a class="contact-link" target="_blank" href="mailto:bradshaw.zachary@gmail.com">Contact</a> |
+      <a class="contact-link" target="_blank" href="http://github.com/zachbradshaw">GitHub</a> |
+      <a class="contact-link" href="#projects">Portfolio</a> |
+      <a class="contact-link" href="#about-section">About</a>
+    </div>
+
   </div>
 
-  <!-- <div class="link-container">
-    <p class="link-line">
-      <a class="portfolio-link" target="_blank"
-        href="http://zachbradshaw.github.io/memory/">Memory!
-      </a> <span class="pipes">|</span>
-      <a class="portfolio-link" target="_blank"
-        href="http://zachbradshaw.github.io/sunnyappointments/">Appointment Tracker
-      </a> <span class="pipes">|</span>
-      <a class="portfolio-link" target="_blank"
-        href="http://zachbradshaw.github.io/user_mgmt">Sign Up Flow
-      </a> <span class="pipes">|</span>
-      <a class="portfolio-link" target="_blank"
-        href="http://zachbradshaw.github.io/week2/hangman.html">Hangman
-      </a>
+  <div id="projects">
+    <h1 class="project-header">Portfolio</h1>
+
+    <div class="project-container hackstarter">
+      <img class="project-screenshot" src="images/hackstarter.png" />
+      <div class="project-detail">
+        <h3 class="project-title">Hackstarter</h3>
+        <p class="project-writeup">
+          My final project for The Iron Yard. I worked on a team of five to finish this
+          project in just two weeks. Hackstarter is a crowdfunding platform for students
+          interested in going to code school. I implemented many features on the site including
+          the interactive code school map using the Google Maps API and the tuition calculator
+          which I built using AngularJS.
+        </p>
+
+        <a href="http://www.hackstarter.com">View Site</a> | <a href="https://github.com/Hackstarter/hackstarter">Repo</a>
+      </div>
+    </div>
+
+    <div class="project-container memory">
+      <img class="project-screenshot" src="images/memory.png" />
+      <div class="project-detail">
+        <h3 class="project-title">Memory!</h3>
+        <p class="project-writeup">
+          A memory game built in jQuery. A user must match all tiles to win the game. When they
+          guess incorrectly their lives decrement. The game is over when a user either matches
+          all tiles or their lives run out. Working out the matching logic for the game tiles
+          helped to strengthen my Javascript and jQuery skills. The styling and animations
+          were done in SCSS.
+        </p>
+
+        <a href="http://zachbradshaw.github.io/memory">View Site</a> | <a href="https://www.github.com/zachbradshaw/memory">Repo</a>
+      </div>
+    </div>
+
+    <div class="project-container resourceful">
+      <img class="project-screenshot" src="images/resourceful.png" />
+      <div class="project-detail">
+        <h3 class="project-title">(resource)ful</h3>
+        <p class="project-writeup">
+          (resource)ful is a Reddit clone meant for developers who want to share resources with
+          other developers. This was a weekend homework project for The Iron Yard and was my
+          first experience deploying a site to Heroku. This project also introduced me to the
+          wonderful world of AngularJS, and we used Github OAuth to handle user login.
+        </p>
+
+        <a href="http://tiy-resourceful.herokuapp.com/">View Site</a> | <a href="https://github.com/zachbradshaw/reshare">Repo</a>
+      </div>
+    </div>
+
+    <div class="project-container appointments">
+      <img class="project-screenshot" src="images/todoapp.png" />
+      <div class="project-detail">
+        <h3 class="project-title">Appointment Tracker</h3>
+        <p class="project-writeup">
+          A mobile web-app that tracks appointments and events. Uses the OpenWeatherMap API to
+        	give the current temperature and weather for the location of the appointment. This was
+        	my first project that used local storage to save information, so a user's appointments
+        	are saved each time they visit the site.
+        </p>
+
+        <a href="http://zachbradshaw.github.io/sunnyappointments/">View Site</a> | <a href="https://github.com/zachbradshaw/sunnyappointments">Repo</a>
+      </div>
+    </div>
+
+    <div class="project-container signup">
+      <img class="project-screenshot" src="images/signup.png" />
+      <div class="project-detail">
+        <h3 class="project-title">Sign Up Flow</h3>
+        <p class="project-writeup">
+          This is a mock up of a user management system for an admin page. This was my first
+        	project using jQuery and doing true DOM manipulation. An admin can add users and
+        	their emails and then delete them if necessary.
+        </p>
+
+        <a href="http://zachbradshaw.github.io/user-mgmt/">View Site</a> | <a href="https://github.com/zachbradshaw/user-mgmt">Repo</a>
+      </div>
+    </div>
+
+    <div class="project-container hangman">
+      <img class="project-screenshot" src="images/hangman.png" />
+      <div class="project-detail">
+        <h3 class="project-title">Hangman</h3>
+        <p class="project-writeup">
+          My first Javascript project, a hangman letter game. This was another weekend homework
+          assignment for The Iron Yard, and it was a great first exercise in some basic
+          programming principles.
+        </p>
+
+        <a href="http://zachbradshaw.github.io/week2/hangman.html">View Site</a> | <a href="https://github.com/zachbradshaw/week2">Repo</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="about-section">
+
+    <p class="about">
+      I'm a front end developer located in Durham, NC and a recent graduate of the Front End Engineering
+      program at The Iron Yard. I'm looking for a development position where I can continue to
+      hone the skills I've learned in school and acquire new skills on the job. When I'm not on
+      a computer I love watching Cincinnati Reds baseball, being outside, and good cigars. <a target="_blank" href="mailto:bradshaw.zachary@gmail.com">Let's talk.</a>
     </p>
-  </div> -->
 
-  <div class="contact-container">
-    <a class="contact-link" target="_blank" href="mailto:bradshaw.zachary@gmail.com">f</a>
-    <a class="contact-link" target="_blank" href="http://github.com/zachbradshaw">g</a>
-    <a class="contact-link" target="_blank" href="https://zbradshaw.wordpress.com/">q</a>
-    <a class="contact-link" target="_blank" href="http://twitter.com/thezachbradshaw">h</a>
-    <a class="contact-link" target="_blank" href="http://instagram.com/thezachbradshaw">i</a>
   </div>
+
+  <div class="footer">
+    <p class="footer-info">
+      &copy; Zach Bradshaw 2015
+    </p>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="js/portfolio.js"></script>
 
 </body>
 
