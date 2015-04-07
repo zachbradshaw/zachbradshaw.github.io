@@ -56,12 +56,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   width: 100%;
 }
 
 .contact-link {
-  /*font-family: 'portfolio-icons';*/
   margin: .25em;
 }
 
