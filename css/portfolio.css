@@ -130,7 +130,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 445px) {
+/*@media (max-width: 445px) {
   .name {
     font-size: 10vw;
   }
@@ -141,7 +141,6 @@ body {
 
   .project-container {
     display: block;
-    /*margin-bottom: 20em;*/
   }
 
   .project-screenshot {
@@ -151,4 +150,4 @@ body {
   .project-writeup {
     display: block;
   }
-}
+}*/
