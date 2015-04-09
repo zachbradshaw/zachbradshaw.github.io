@@ -12,18 +12,18 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }
 
 .name {
   font-weight: 700;
-  font-size: 7em;
+  font-size: 9vw;
 }
 
 .job-title {
   font-weight: 300;
-  font-size: 3em;
+  font-size: 4vw;
 }
 
 .link-container {
@@ -32,7 +32,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .link-line {
@@ -128,4 +128,27 @@ body {
 
 .footer-info {
   text-align: center;
+}
+
+@media (max-width: 445px) {
+  .name {
+    font-size: 10vw;
+  }
+
+  .contact-container {
+    font-size: 1em;
+  }
+
+  .project-container {
+    display: block;
+    /*margin-bottom: 20em;*/
+  }
+
+  .project-screenshot {
+    display: block;
+  }
+
+  .project-writeup {
+    display: block;
+  }
 }
