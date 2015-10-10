@@ -24,7 +24,7 @@ $(document).ready(function() {
             imgSrc: 'images/hackstarter.png',
             imgAlt: 'Hackstarter Homepage',
             siteLink: 'http://www.hackstarter.com',
-            repoLink: 'https://github.com/Hackstarter/hackstarter'
+            repoLink: 'https://github.com/Hackstarter'
         }, {
             name: 'Memory!',
             cssClass: 'memory',
