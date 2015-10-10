@@ -28,21 +28,19 @@
     </div>
 
     <h1 class="projects-header">Portfolio</h1>
-    <div class="empty-wrapper"></div>
+    <div class="projects-container"></div>
     <script type="text/html" id="main-content">
-        <div id="projects-container">
-            <% for (var i in projects) {%>
-                <div class="project <%- projects[i].cssClass %>">
-                    <img class="project-screenshot" src="<%- projects[i].imgSrc %>" />
-                    <div class="project-detail">
-                        <h3 class="project-title"><%- projects[i].name %></h3>
-                        <p class="project-writeup"><%- projects[i].desc %></p>
+        <% for (var i in projects) {%>
+            <div class="project <%- projects[i].cssClass %>">
+                <img class="project-screenshot" src="<%- projects[i].imgSrc %>" />
+                <div class="project-detail">
+                    <h3 class="project-title"><%- projects[i].name %></h3>
+                    <p class="project-writeup"><%- projects[i].desc %></p>
 
-                        <a href="<%- projects[i].siteLink %>">View Site</a> | <a href="<%- projects[i].repoLink %>">Github</a>
-                    </div>
+                    <a href="<%- projects[i].siteLink %>">View Site</a> | <a href="<%- projects[i].repoLink %>">Github</a>
                 </div>
-            <% } %>
-        </div>
+            </div>
+        <% } %>
     </script>
 
     <div id="about-section">

@@ -83,7 +83,7 @@ $(document).ready(function() {
             projects: projects
         });
 
-        $('.empty-wrapper').html(template);
+        $('.projects-container').html(template);
     };
 
     portfolioTemplate();
