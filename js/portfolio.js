@@ -13,7 +13,7 @@ $(document).ready(function() {
     });
 
     var portfolioTemplate = function() {
-        var mainView = $('#main-content').html();
+        var mainView = $('#project-list').html();
         var projects = [{
             name: 'Hackstarter',
             cssClass: 'hackstarter',
