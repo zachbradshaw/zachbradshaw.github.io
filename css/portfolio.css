@@ -72,7 +72,7 @@ body {
     font-size: 1.2em;
 }
 
-.projects-container {
+#projects-container {
     display: block;
 }
 

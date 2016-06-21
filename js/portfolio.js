@@ -83,10 +83,8 @@ $(document).ready(function() {
             projects: projects
         });
 
-        $('.projects-container').html(template);
+        $('#projects-container').html(template);
     };
 
     portfolioTemplate();
 });
-
-
