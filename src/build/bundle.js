@@ -22034,14 +22034,19 @@
 	
 	var _ContactLinkContainer2 = _interopRequireDefault(_ContactLinkContainer);
 	
+	var _ProjectsContainer = __webpack_require__(/*! ./components/ProjectsContainer */ 207);
+	
+	var _ProjectsContainer2 = _interopRequireDefault(_ProjectsContainer);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Portfolio = function Portfolio() {
 	    return _React2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'hero' },
 	        _React2.default.createElement(_Name2.default, null),
-	        _React2.default.createElement(_ContactLinkContainer2.default, null)
+	        _React2.default.createElement(_ContactLinkContainer2.default, null),
+	        _React2.default.createElement(_ProjectsContainer2.default, null)
 	    );
 	};
 	
@@ -25776,6 +25781,137 @@
 	};
 	
 	exports.default = ContactLinkContainer;
+
+/***/ },
+/* 207 */
+/*!*************************************************!*\
+  !*** ./src/app/components/ProjectsContainer.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _projects = __webpack_require__(/*! ../lib/projects */ 208);
+	
+	var _projects2 = _interopRequireDefault(_projects);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Project = function Project(props) {
+	    return _react2.default.createElement(
+	        'div',
+	        { className: 'project' },
+	        _react2.default.createElement('img', { className: 'project-screenshot', src: props.imgSrc }),
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'project-detail' },
+	            _react2.default.createElement(
+	                'h3',
+	                { className: 'project-title' },
+	                props.name
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                { className: 'project-writeup' },
+	                props.desc
+	            ),
+	            _react2.default.createElement(
+	                'a',
+	                { href: props.siteLink },
+	                'View Site'
+	            ),
+	            ' | ',
+	            _react2.default.createElement(
+	                'a',
+	                { href: props.repoLink },
+	                'Github'
+	            )
+	        )
+	    );
+	};
+	
+	var ProjectsContainer = function ProjectsContainer() {
+	    return _react2.default.createElement(
+	        'div',
+	        { className: 'projects-container' },
+	        _projects2.default.map(function (project) {
+	            return _react2.default.createElement(Project, {
+	                imgSrc: project.imgSrc,
+	                name: project.name,
+	                desc: project.desc,
+	                siteLink: project.siteLink,
+	                repoLink: project.repoLink });
+	        })
+	    );
+	};
+	
+	exports.default = ProjectsContainer;
+
+/***/ },
+/* 208 */
+/*!*********************************!*\
+  !*** ./src/app/lib/projects.js ***!
+  \*********************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var projects = [{
+	    name: 'Hackstarter',
+	    desc: 'My final project for The Iron Yard. I worked on a team of five developers to\n    finish this project in just two weeks. Hackstarter is a crowdfunding platform for students\n    interested in going to code school. I implemented many features on the site including the\n    interactive code school map using the Google Maps API and the tuition calculator which I\n    built using AngularJS.',
+	    imgSrc: './app/lib/images/hackstarter.png',
+	    imgAlt: 'Hackstarter Homepage',
+	    siteLink: 'https://www.hackstarter.com',
+	    repoLink: 'https://github.com/Hackstarter'
+	}, {
+	    name: 'Memory!',
+	    desc: 'A memory game built in jQuery. A user must match all tiles to win the game.\n    When they guess incorrectly their lives decrement. The game is over when a user either\n    matches all tiles or their lives run out. Working out the matching logic for the game\n    tiles helped to strengthen my Javascript and jQuery skills. The styling and animations\n    were done in SCSS.',
+	    imgSrc: './app/lib/images/memory.png',
+	    imgAlt: 'Memory Game',
+	    siteLink: 'http://zachbradshaw.github.io/memory',
+	    repoLink: 'https://www.github.com/zachbradshaw/memory'
+	}, {
+	    name: '(resource)ful',
+	    desc: '(resource)ful is a Reddit clone meant for developers who want to share resources with\n    other developers. This was a weekend homework project for The Iron Yard and was my\n    first experience deploying a site to Heroku. This project also introduced me to the\n    wonderful world of AngularJS, and we used Github OAuth to handle user login.',
+	    imgSrc: './app/lib/images/resourceful.png',
+	    imgAlt: '(resource)ful',
+	    siteLink: 'http://tiy-resourceful.herokuapp.com/',
+	    repoLink: 'https://github.com/zachbradshaw/reshare'
+	}, {
+	    name: 'Appointment Tracker',
+	    desc: 'A mobile web-app that tracks appointments and events. Uses the OpenWeatherMap API to\n    give the current temperature and weather for the location of the appointment. This was\n    my first project that used local storage to save information, so a users appointments\n    are saved each time they visit the site.',
+	    imgSrc: './app/lib/images/todoapp.png',
+	    imgAlt: 'Appointment Tracker',
+	    siteLink: 'http://zachbradshaw.github.io/sunnyappointments/',
+	    repoLink: 'https://github.com/zachbradshaw/sunnyappointments'
+	}, {
+	    name: 'Sign Up Flow',
+	    desc: 'This is a mock up of a user management system for an admin page. This was my first\n    project using jQuery and doing true DOM manipulation. An admin can add users and\n    their emails and then delete them if necessary.',
+	    imgSrc: './app/lib/images/signup.png',
+	    imgAlt: 'Sign up flow',
+	    siteLink: 'http://zachbradshaw.github.io/user-mgmt/',
+	    repoLink: 'https://github.com/zachbradshaw/user-mgmt'
+	}, {
+	    name: 'Hangman',
+	    desc: 'My first Javascript project, a hangman letter game. This was another weekend homework\n    assignment for The Iron Yard, and it was a great first exercise in some basic\n    programming principles.',
+	    imgSrc: './app/lib/images/hangman.png',
+	    imgAlt: 'Hangman game',
+	    siteLink: 'http://zachbradshaw.github.io/week2/hangman.html',
+	    repoLink: 'https://github.com/zachbradshaw/week2'
+	}];
+	
+	exports.default = projects;
 
 /***/ }
 /******/ ]);
