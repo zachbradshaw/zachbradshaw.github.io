@@ -1,12 +1,12 @@
-import React, { Component } from 'React';
+import React from 'React';
 import Name from './components/Name';
+import ContactLinkContainer from './components/ContactLinkContainer';
 
-class Portfolio extends Component {
-    render() {
-        return (
-            <Name />
-        );
-    }
-}
+const Portfolio = () => (
+    <div>
+        <Name />
+        <ContactLinkContainer />
+    </div>
+);
 
 export default Portfolio;
