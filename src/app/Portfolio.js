@@ -2,12 +2,20 @@ import React from 'React';
 import Name from './components/Name';
 import ContactLinkContainer from './components/ContactLinkContainer';
 import ProjectsContainer from './components/ProjectsContainer';
+import About from './components/About';
+import Footer from './components/Footer';
 
 const Portfolio = () => (
-    <div className='hero'>
-        <Name />
-        <ContactLinkContainer />
-        <ProjectsContainer />
+    <div>
+        <div className='hero'>
+            <Name />
+            <ContactLinkContainer />
+        </div>
+        <div className='projects'>
+            <ProjectsContainer />
+        </div>
+        <About />
+        <Footer />
     </div>
 );
 

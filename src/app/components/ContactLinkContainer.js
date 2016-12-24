@@ -12,7 +12,14 @@ const ContactLink = (props) => <a target={props.target} href={props.href}>{props
 const ContactLinkContainer = () => (
     <div className="contact-container">
         {contactLinkUrls.map((link) => {
-            return <ContactLink target={link.target} href={link.href} title={link.title} />;
+            return (
+                <ContactLink
+                    key={link.href}
+                    target={link.target}
+                    href={link.href}
+                    title={link.title}
+                />
+            );
         })}
     </div>
 );

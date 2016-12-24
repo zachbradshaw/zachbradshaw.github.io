@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     height: 100vh;
 }
@@ -89,4 +90,12 @@ body {
 
 .project-writeup {
     text-align: left;
+}
+
+.project-link {
+    margin-right: 10px;
+}
+
+.appointmentTracker .project-detail {
+    margin-top: 30px;
 }

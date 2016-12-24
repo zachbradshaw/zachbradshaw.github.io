@@ -6,9 +6,7 @@ const projects = [{
     interactive code school map using the Google Maps API and the tuition calculator which I
     built using AngularJS.`,
     imgSrc: './app/lib/images/hackstarter.png',
-    imgAlt: 'Hackstarter Homepage',
-    siteLink: 'https://www.hackstarter.com',
-    repoLink: 'https://github.com/Hackstarter'
+    imgAlt: 'Hackstarter Homepage'
 }, {
     name: 'Memory!',
     desc: `A memory game built in jQuery. A user must match all tiles to win the game.
