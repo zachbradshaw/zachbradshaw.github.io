@@ -5,7 +5,7 @@ const projects = [{
     interested in going to code school. I implemented many features on the site including the
     interactive code school map using the Google Maps API and the tuition calculator which I
     built using AngularJS.`,
-    imgSrc: './app/lib/images/hackstarter.PNG',
+    imgSrc: './src/app/lib/images/hackstarter.png',
     imgAlt: 'Hackstarter Homepage'
 }, {
     name: 'Memory!',
@@ -14,7 +14,7 @@ const projects = [{
     matches all tiles or their lives run out. Working out the matching logic for the game
     tiles helped to strengthen my Javascript and jQuery skills. The styling and animations
     were done in SCSS.`,
-    imgSrc: './app/lib/images/memory.PNG',
+    imgSrc: './src/app/lib/images/memory.png',
     imgAlt: 'Memory Game',
     siteLink: 'http://zachbradshaw.github.io/memory',
     repoLink: 'https://www.github.com/zachbradshaw/memory'
@@ -24,7 +24,7 @@ const projects = [{
     other developers. This was a weekend homework project for The Iron Yard and was my
     first experience deploying a site to Heroku. This project also introduced me to the
     wonderful world of AngularJS, and we used Github OAuth to handle user login.`,
-    imgSrc: './app/lib/images/resourceful.PNG',
+    imgSrc: './src/app/lib/images/resourceful.png',
     imgAlt: '(resource)ful',
     siteLink: 'http://tiy-resourceful.herokuapp.com/',
     repoLink: 'https://github.com/zachbradshaw/reshare'
@@ -34,7 +34,7 @@ const projects = [{
     give the current temperature and weather for the location of the appointment. This was
     my first project that used local storage to save information, so a users appointments
     are saved each time they visit the site.`,
-    imgSrc: './app/lib/images/todoapp.PNG',
+    imgSrc: './src/app/lib/images/todoapp.png',
     imgAlt: 'Appointment Tracker',
     siteLink: 'http://zachbradshaw.github.io/sunnyappointments/',
     repoLink: 'https://github.com/zachbradshaw/sunnyappointments'
@@ -43,7 +43,7 @@ const projects = [{
     desc: `This is a mock up of a user management system for an admin page. This was my first
     project using jQuery and doing true DOM manipulation. An admin can add users and
     their emails and then delete them if necessary.`,
-    imgSrc: './app/lib/images/signup.PNG',
+    imgSrc: './src/app/lib/images/signup.png',
     imgAlt: 'Sign up flow',
     siteLink: 'http://zachbradshaw.github.io/user-mgmt/',
     repoLink: 'https://github.com/zachbradshaw/user-mgmt'
@@ -52,7 +52,7 @@ const projects = [{
     desc: `My first Javascript project, a hangman letter game. This was another weekend homework
     assignment for The Iron Yard, and it was a great first exercise in some basic
     programming principles.`,
-    imgSrc: './app/lib/images/hangman.PNG',
+    imgSrc: './src/app/lib/images/hangman.png',
     imgAlt: 'Hangman game',
     siteLink: 'http://zachbradshaw.github.io/week2/hangman.html',
     repoLink: 'https://github.com/zachbradshaw/week2'
