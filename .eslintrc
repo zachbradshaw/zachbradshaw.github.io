@@ -1,0 +1,27 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+        "indent": [2, 4],
+        "semi": [
+            2,
+            "always"
+        ],
+        "react/jsx-uses-react": 1,
+        "react/jsx-uses-vars": [2]
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "mocha": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+        "modules": true,
+        "jsx": true,
+        "experimentalObjectRestSpread": true
+    },
+    "plugins": [
+        "react"
+    ]
+}
